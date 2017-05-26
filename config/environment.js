@@ -49,7 +49,9 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
+    ENV.rootURL = '/test-ember-deployment'
     ENV.locationType = 'hash';
+    ENV.apiHost = ???
   }
 
   return ENV;
